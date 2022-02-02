@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="hai"></textarea>
+
+    <button onclick="boom()">boom</button>
+    <textarea id="ans"></textarea>
+    <script>
+        
+        function boom(){
+            var a=document.getElementById("hai").value
+            console.log(a);
+            console.log(document.getElementById("hai").value)
+            console.log(typeof(document.getElementById("hai").value))
+            document.getElementById("ans").innerHTML=a;
+            
+
+        }
+
+    </script>
+</body>
+</html>
