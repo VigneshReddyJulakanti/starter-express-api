@@ -11,7 +11,7 @@ connectToMongo();
 app.use(cors({
     origin:"*",
   }))
-const port=5000;
+const port=process.env.PORT || 5000;
 app.use(express.json());
 app.get('/',(req,res)=>{
     res.send("You are in Home of data base , BOOM :)")
