@@ -17,6 +17,7 @@ app.use(express.json());
 app.get('/',(req,res)=>{
     res.send("You are in Home of data base , BOOM :)")
 })
+
 app.post('/admin',(req,res)=>{
     if(req.body.user==(process.env.ADMIN_ID|| "boom" )&& req.body.pass==(process.env.ADMIN_PASS || "1426")){
         
